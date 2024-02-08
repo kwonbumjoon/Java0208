@@ -15,7 +15,6 @@ public class FruitBoxEx02 {
 		Box<Apple> abox = new Box();
 		Box<Orange> bbox = new Box();
 
-		Box<Integer> ibox = new Box<Integer>();
 		
 		abox.setObj(new Apple()); // 사과 담음
 		bbox.setObj(new Orange()); // 오랜지 담음
@@ -30,6 +29,7 @@ public class FruitBoxEx02 {
 		cbox.setObj(10);
 		System.out.println(cbox);
 		
+		Box<Integer> ibox = new Box<Integer>();
 		ibox.setObj(100);
 		int num = ibox.getObj();
 		System.out.println(num);
