@@ -12,17 +12,17 @@ class Box<T> {
 	}
 }
 
-class unboxer {
+class Unboxer {
 	public static <T> T openBox(Box<T> box) {
 		return box.get();
 	}
 }
 
-public class GenericMethod02 {
+public class GenericMethod01 {
 	public static void main(String[] args) {
 		Box<String> sbox = new Box<String>();
 		sbox.set("korea");
-		String str = unboxer.openBox(sbox);
+		String str = Unboxer.openBox(sbox);
 		System.out.println(str);
 	}
 }
